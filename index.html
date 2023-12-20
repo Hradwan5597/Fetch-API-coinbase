@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/style.css">
+
+    <title>Crypto Information Database</title>
+</head>
+
+<body>
+    <header>Crypto Currency Info</header>
+    <main><div class="custom-select">
+        <select id="coin-select">
+            <option value="">Choose Crypto Coin</option>
+        </select>
+    <div class="custom-arrow">
+        <i class="fa fa-angle-double-down" style="font-size:24px"></i>
+    </div>
+    </div>
+    </main>
+    <div id="data-container">
+        <p><span id="id"></span></span></p>
+        <p><strong>Symbol:</strong> <span id="symbol"></span></p>
+        <p><strong>Supply:</strong> <span id="supply"></span></p>
+        <p><strong>Price:</strong> $<span id="priceUsd"></span></p>
+        <p><strong>% change (24 hrs):</strong> <span id="changePercent24Hr"></span>%</p>
+    </div>
+    <script src="scripts/fetch-data.js"></script>
+</body>
+</html>
